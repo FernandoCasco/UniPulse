@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G531" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
+    <entity name="Meta" representedClassName="Meta" syncable="YES" codeGenerationType="class">
+        <attribute name="activa" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="semanaInicio" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tipo" optional="YES" attributeType="String"/>
+        <attribute name="valorObjetivo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="perfil" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PerfilEstudiante" inverseName="metas" inverseEntity="PerfilEstudiante"/>
+    </entity>
+    <entity name="PerfilEstudiante" representedClassName="PerfilEstudiante" syncable="YES" codeGenerationType="class">
+        <attribute name="carrera" optional="YES" attributeType="String"/>
+        <attribute name="fechaRegistro" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <relationship name="metas" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Meta" inverseName="perfil" inverseEntity="Meta"/>
+    </entity>
+    <entity name="RegistroAnimo" representedClassName="RegistroAnimo" syncable="YES" codeGenerationType="class">
+        <attribute name="fecha" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nivelAnimo" optional="YES" attributeType="Integer 16" defaultValueString="3" usesScalarValueType="YES"/>
+        <attribute name="nivelEstres" optional="YES" attributeType="Integer 16" defaultValueString="3" usesScalarValueType="YES"/>
+        <attribute name="nota" optional="YES" attributeType="String"/>
+        <relationship name="resumen" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ResumenDiario" inverseName="animo" inverseEntity="ResumenDiario"/>
+    </entity>
+    <entity name="ResumenDiario" representedClassName="ResumenDiario" syncable="YES" codeGenerationType="class">
+        <attribute name="distanciaKm" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fechaSincronizacion" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fuente" optional="YES" attributeType="String"/>
+        <attribute name="horasSueno" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="minutosActivos" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pasos" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="animo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RegistroAnimo" inverseName="resumen" inverseEntity="RegistroAnimo"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="fecha"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="Meta" positionX="-63" positionY="135" width="128" height="119"/>
+        <element name="PerfilEstudiante" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="RegistroAnimo" positionX="180" positionY="180" width="128" height="119"/>
+        <element name="ResumenDiario" positionX="180" positionY="-18" width="128" height="164"/>
     </elements>
 </model>
