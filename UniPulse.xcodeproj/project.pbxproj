@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B59F32BE309D923E002E1616 /* RecordatorioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32BC309D923E002E1616 /* RecordatorioManager.swift */; };
+		B59F32BF309D923E002E1616 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32BD309D923E002E1616 /* HealthKitManager.swift */; };
+		B59F32C2309D9265002E1616 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32C1309D9265002E1616 /* DashboardViewModel.swift */; };
+		B59F32C6309DAA6A002E1616 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32C3309DAA6A002E1616 /* PersistenceController.swift */; };
+		B59F32C7309DAA6A002E1616 /* Perspectivas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32C4309DAA6A002E1616 /* Perspectivas.swift */; };
+		B59F32C8309DAA6A002E1616 /* TipoDato.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32C5309DAA6A002E1616 /* TipoDato.swift */; };
 		B5A6425D309D535B001BB00A /* UniPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6425C309D535B001BB00A /* UniPulseApp.swift */; };
 		B5A64261309D535E001BB00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A64260309D535E001BB00A /* Assets.xcassets */; };
 		B5A64264309D535E001BB00A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A64263309D535E001BB00A /* Preview Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B59F32BC309D923E002E1616 /* RecordatorioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordatorioManager.swift; sourceTree = "<group>"; };
+		B59F32BD309D923E002E1616 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		B59F32C1309D9265002E1616 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		B59F32C3309DAA6A002E1616 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		B59F32C4309DAA6A002E1616 /* Perspectivas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perspectivas.swift; sourceTree = "<group>"; };
+		B59F32C5309DAA6A002E1616 /* TipoDato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoDato.swift; sourceTree = "<group>"; };
 		B5A64259309D535B001BB00A /* UniPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A6425C309D535B001BB00A /* UniPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPulseApp.swift; sourceTree = "<group>"; };
 		B5A64260309D535E001BB00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +46,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5856232309D8E820018E3F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B59F32C3309DAA6A002E1616 /* PersistenceController.swift */,
+				B59F32C4309DAA6A002E1616 /* Perspectivas.swift */,
+				B59F32C5309DAA6A002E1616 /* TipoDato.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B59F32BB309D923E002E1616 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B59F32BC309D923E002E1616 /* RecordatorioManager.swift */,
+				B59F32BD309D923E002E1616 /* HealthKitManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B59F32C0309D9265002E1616 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B59F32C1309D9265002E1616 /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		B5A64250309D535B001BB00A = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +92,9 @@
 		B5A6425B309D535B001BB00A /* UniPulse */ = {
 			isa = PBXGroup;
 			children = (
+				B59F32C0309D9265002E1616 /* ViewModels */,
+				B59F32BB309D923E002E1616 /* Services */,
+				B5856232309D8E820018E3F1 /* Models */,
 				B5A64270309D56AB001BB00A /* Info.plist */,
 				B5A6426F309D55E5001BB00A /* UniPulse.entitlements */,
 				B5A6425C309D535B001BB00A /* UniPulseApp.swift */,
@@ -141,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59F32C7309DAA6A002E1616 /* Perspectivas.swift in Sources */,
 				B5A64269309D535E001BB00A /* UniPulse.xcdatamodeld in Sources */,
+				B59F32C2309D9265002E1616 /* DashboardViewModel.swift in Sources */,
 				B5A6425D309D535B001BB00A /* UniPulseApp.swift in Sources */,
+				B59F32C6309DAA6A002E1616 /* PersistenceController.swift in Sources */,
+				B59F32C8309DAA6A002E1616 /* TipoDato.swift in Sources */,
+				B59F32BF309D923E002E1616 /* HealthKitManager.swift in Sources */,
+				B59F32BE309D923E002E1616 /* RecordatorioManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
