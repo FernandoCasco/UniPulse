@@ -7,19 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5451E56309E428D00B5F307 /* InicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E4A309E428D00B5F307 /* InicioView.swift */; };
+		B5451E57309E428D00B5F307 /* MetasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E4B309E428D00B5F307 /* MetasView.swift */; };
+		B5451E58309E428D00B5F307 /* HistorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E4C309E428D00B5F307 /* HistorialView.swift */; };
+		B5451E59309E428D00B5F307 /* DetalleMetricaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E4D309E428D00B5F307 /* DetalleMetricaView.swift */; };
+		B5451E5A309E428D00B5F307 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E4E309E428D00B5F307 /* PerfilView.swift */; };
+		B5451E5B309E428D00B5F307 /* AjustesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E4F309E428D00B5F307 /* AjustesView.swift */; };
+		B5451E5C309E428D00B5F307 /* NuevoRegistroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E50309E428D00B5F307 /* NuevoRegistroView.swift */; };
+		B5451E5D309E428D00B5F307 /* GraficasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E51309E428D00B5F307 /* GraficasView.swift */; };
+		B5451E5E309E428D00B5F307 /* BienvenidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E52309E428D00B5F307 /* BienvenidaView.swift */; };
+		B5451E5F309E428D00B5F307 /* Componentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E53309E428D00B5F307 /* Componentes.swift */; };
+		B5451E60309E428D00B5F307 /* UniPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E54309E428D00B5F307 /* UniPulseApp.swift */; };
+		B5451E61309E428D00B5F307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5451E55309E428D00B5F307 /* ContentView.swift */; };
 		B59F32BE309D923E002E1616 /* RecordatorioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32BC309D923E002E1616 /* RecordatorioManager.swift */; };
 		B59F32BF309D923E002E1616 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32BD309D923E002E1616 /* HealthKitManager.swift */; };
 		B59F32C2309D9265002E1616 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32C1309D9265002E1616 /* DashboardViewModel.swift */; };
 		B59F32C6309DAA6A002E1616 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32C3309DAA6A002E1616 /* PersistenceController.swift */; };
 		B59F32C7309DAA6A002E1616 /* Perspectivas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32C4309DAA6A002E1616 /* Perspectivas.swift */; };
 		B59F32C8309DAA6A002E1616 /* TipoDato.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F32C5309DAA6A002E1616 /* TipoDato.swift */; };
-		B5A6425D309D535B001BB00A /* UniPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6425C309D535B001BB00A /* UniPulseApp.swift */; };
 		B5A64261309D535E001BB00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A64260309D535E001BB00A /* Assets.xcassets */; };
 		B5A64264309D535E001BB00A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A64263309D535E001BB00A /* Preview Assets.xcassets */; };
 		B5A64269309D535E001BB00A /* UniPulse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5A64267309D535E001BB00A /* UniPulse.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5451E4A309E428D00B5F307 /* InicioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioView.swift; sourceTree = "<group>"; };
+		B5451E4B309E428D00B5F307 /* MetasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetasView.swift; sourceTree = "<group>"; };
+		B5451E4C309E428D00B5F307 /* HistorialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialView.swift; sourceTree = "<group>"; };
+		B5451E4D309E428D00B5F307 /* DetalleMetricaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleMetricaView.swift; sourceTree = "<group>"; };
+		B5451E4E309E428D00B5F307 /* PerfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		B5451E4F309E428D00B5F307 /* AjustesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjustesView.swift; sourceTree = "<group>"; };
+		B5451E50309E428D00B5F307 /* NuevoRegistroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevoRegistroView.swift; sourceTree = "<group>"; };
+		B5451E51309E428D00B5F307 /* GraficasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraficasView.swift; sourceTree = "<group>"; };
+		B5451E52309E428D00B5F307 /* BienvenidaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BienvenidaView.swift; sourceTree = "<group>"; };
+		B5451E53309E428D00B5F307 /* Componentes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Componentes.swift; sourceTree = "<group>"; };
+		B5451E54309E428D00B5F307 /* UniPulseApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniPulseApp.swift; sourceTree = "<group>"; };
+		B5451E55309E428D00B5F307 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B59F32BC309D923E002E1616 /* RecordatorioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordatorioManager.swift; sourceTree = "<group>"; };
 		B59F32BD309D923E002E1616 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		B59F32C1309D9265002E1616 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -27,7 +50,6 @@
 		B59F32C4309DAA6A002E1616 /* Perspectivas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perspectivas.swift; sourceTree = "<group>"; };
 		B59F32C5309DAA6A002E1616 /* TipoDato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoDato.swift; sourceTree = "<group>"; };
 		B5A64259309D535B001BB00A /* UniPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5A6425C309D535B001BB00A /* UniPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPulseApp.swift; sourceTree = "<group>"; };
 		B5A64260309D535E001BB00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5A64263309D535E001BB00A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5A64268309D535E001BB00A /* UniPulse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UniPulse.xcdatamodel; sourceTree = "<group>"; };
@@ -46,6 +68,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5451E49309E428D00B5F307 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5451E4A309E428D00B5F307 /* InicioView.swift */,
+				B5451E4B309E428D00B5F307 /* MetasView.swift */,
+				B5451E4C309E428D00B5F307 /* HistorialView.swift */,
+				B5451E4D309E428D00B5F307 /* DetalleMetricaView.swift */,
+				B5451E4E309E428D00B5F307 /* PerfilView.swift */,
+				B5451E4F309E428D00B5F307 /* AjustesView.swift */,
+				B5451E50309E428D00B5F307 /* NuevoRegistroView.swift */,
+				B5451E51309E428D00B5F307 /* GraficasView.swift */,
+				B5451E52309E428D00B5F307 /* BienvenidaView.swift */,
+				B5451E53309E428D00B5F307 /* Componentes.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B5856232309D8E820018E3F1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,12 +131,14 @@
 		B5A6425B309D535B001BB00A /* UniPulse */ = {
 			isa = PBXGroup;
 			children = (
+				B5451E55309E428D00B5F307 /* ContentView.swift */,
+				B5451E54309E428D00B5F307 /* UniPulseApp.swift */,
+				B5451E49309E428D00B5F307 /* Views */,
 				B59F32C0309D9265002E1616 /* ViewModels */,
 				B59F32BB309D923E002E1616 /* Services */,
 				B5856232309D8E820018E3F1 /* Models */,
 				B5A64270309D56AB001BB00A /* Info.plist */,
 				B5A6426F309D55E5001BB00A /* UniPulse.entitlements */,
-				B5A6425C309D535B001BB00A /* UniPulseApp.swift */,
 				B5A64260309D535E001BB00A /* Assets.xcassets */,
 				B5A64267309D535E001BB00A /* UniPulse.xcdatamodeld */,
 				B5A64262309D535E001BB00A /* Preview Content */,
@@ -184,13 +225,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59F32C7309DAA6A002E1616 /* Perspectivas.swift in Sources */,
+				B5451E5F309E428D00B5F307 /* Componentes.swift in Sources */,
+				B5451E56309E428D00B5F307 /* InicioView.swift in Sources */,
 				B5A64269309D535E001BB00A /* UniPulse.xcdatamodeld in Sources */,
 				B59F32C2309D9265002E1616 /* DashboardViewModel.swift in Sources */,
-				B5A6425D309D535B001BB00A /* UniPulseApp.swift in Sources */,
+				B5451E5A309E428D00B5F307 /* PerfilView.swift in Sources */,
+				B5451E59309E428D00B5F307 /* DetalleMetricaView.swift in Sources */,
+				B5451E58309E428D00B5F307 /* HistorialView.swift in Sources */,
+				B5451E61309E428D00B5F307 /* ContentView.swift in Sources */,
 				B59F32C6309DAA6A002E1616 /* PersistenceController.swift in Sources */,
 				B59F32C8309DAA6A002E1616 /* TipoDato.swift in Sources */,
+				B5451E5D309E428D00B5F307 /* GraficasView.swift in Sources */,
+				B5451E57309E428D00B5F307 /* MetasView.swift in Sources */,
+				B5451E5B309E428D00B5F307 /* AjustesView.swift in Sources */,
+				B5451E5C309E428D00B5F307 /* NuevoRegistroView.swift in Sources */,
 				B59F32BF309D923E002E1616 /* HealthKitManager.swift in Sources */,
 				B59F32BE309D923E002E1616 /* RecordatorioManager.swift in Sources */,
+				B5451E60309E428D00B5F307 /* UniPulseApp.swift in Sources */,
+				B5451E5E309E428D00B5F307 /* BienvenidaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

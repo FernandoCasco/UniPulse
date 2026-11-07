@@ -2,19 +2,25 @@
 //  UniPulseApp.swift
 //  UniPulse
 //
-//  Created by Fernando Perez on 5/11/26.
+//  Punto de entrada de la aplicación.
 //
 
 import SwiftUI
 
 @main
 struct UniPulseApp: App {
-    let persistenceController = PersistenceController.shared
+    let persistencia = PersistenceController.shared
+    @StateObject private var dashboard = DashboardViewModel()
+
+    init() {
+        RecordatorioManager.shared.configurar()
+    }
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, persistencia.container.viewContext)
+                .environmentObject(dashboard)
         }
     }
 }
