@@ -79,5 +79,3 @@ Nota: HealthKit no permite que otras apps escriban minutos de ejercicio (`appleE
 ## Autor
 
 Fernando Miguel Pérez Casco – Ingeniería en Sistemas y Computación, UTEC.
-
-Se utilizó Claude (IA) como asistente de programación en el diseño y la revisión del código.
